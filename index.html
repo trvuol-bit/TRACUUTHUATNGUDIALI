@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>Tra cứu thuật ngữ Địa lí</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-
-<div class="container">
-    <h1>📘 Tra cứu thuật ngữ Địa lí</h1>
+  <div class="container">
+    <h1>TRA CỨU THUẬT NGỮ ĐỊA LÍ</h1>
 
     <input
-        type="text"
-        id="searchBox"
-        placeholder="Nhập thuật ngữ (ví dụ: gió, khí hậu, dân số...)"
-    >
+      type="text"
+      id="searchInput"
+      placeholder="Nhập thuật ngữ cần tra cứu…"
+      oninput="searchTerm()"
+    />
 
-    <div id="results"></div>
+    <div id="result"></div>
+  </div>
 
-    <div class="footer">
-        Ứng dụng tra cứu thuật ngữ Địa lí 10 – dùng offline
-    </div>
-</div>
-
-<!-- BẮT BUỘC để script ở đây -->
-<script src="data.js"></script>
-<script src="app.js"></script>
-
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
-</html>
